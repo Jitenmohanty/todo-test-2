@@ -142,7 +142,7 @@ const styles = {
     gridTemplateColumns: "repeat(auto-fill, minmax(250px, 1fr))"
   },
   todoCard: {
-    backgroundColor: "#c1d6f7",
+    backgroundColor: "#134491",
     borderRadius: "5px",
     boxShadow: "0 2px 4px rgba(0, 0, 0, 0.1)",
     padding: "10px"
@@ -153,10 +153,10 @@ const styles = {
     // padding: "8px", 
     fontFamily: "Helvetica, Arial, sans-serif",
     fontSize: "1.2rem",
-    // color:'white'
+    color:'#c9e1f0   '
   },
   actionButton: {
-    backgroundColor: "green",
+    backgroundColor: "#b0f736",
     height: "30px",
     width: "150px",
     border: "2px solid grey",
@@ -164,7 +164,8 @@ const styles = {
     marginBottom: "7px",
     cursor: "pointer",
     fontSize: "12px",
-    color: "yellow"
+    color: "black",
+    padding:'2px'
   },
   delete: {
     backgroundColor: "red",
