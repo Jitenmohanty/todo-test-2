@@ -91,9 +91,9 @@ const App = () => {
     <div>
       <h1 style={styles.heading}>Todo App</h1>
       <div style={styles.inputContainer}>
-        <input
+        <textarea
           style={styles.inputBox}
-          type="textarea"
+          type="text"
           value={newTodo}
           onChange={(e) => setNewTodo(e.target.value)}
         />
@@ -198,7 +198,7 @@ const styles = {
     boxShadow: "0 3px 5px 2px rgba(255, 105, 135, .3)",
     color: "white",
     height: "6rem",
-    padding: "0 30px",
+    padding: "10px 30px",
     fontSize: "20px",
     color: "blue",
     resize: "none",
