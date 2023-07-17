@@ -4,10 +4,12 @@ const App = () => {
   const [todos, setTodos] = useState([]);
   const [newTodo, setNewTodo] = useState("");
 
+  // fetch todo call inside useEffect bcz it loads every renders.
   useEffect(() => {
     fetchTodos();
   }, []);
 
+  //Here is my fetch todo function it fetch all todos from api...
   const fetchTodos = async () => {
     try {
       const response = await fetch(
@@ -20,6 +22,8 @@ const App = () => {
     }
   };
 
+
+// Here is my add todo function to added my todo inside todos app...but it was not save inside api...
   const addTodo = async () => {
     try {
       const response = await fetch(
@@ -40,6 +44,7 @@ const App = () => {
     }
   };
 
+  // Here is my Update todo func taken on basic parameter like id or completed...
   const updateTodo = async (id, completed) => {
     try {
       const response = await fetch(
@@ -68,6 +73,7 @@ const App = () => {
     }
   };
 
+  // Here is my delete todo function using the delete method to delete ...take parameter id to find todo and delete...
   const deleteTodo = async (id) => {
     try {
       const response = await fetch(
@@ -86,6 +92,8 @@ const App = () => {
       console.error("Error deleting todo:", error);
     }
   };
+
+  // Here my react rendering part...
 
   return (
     <div>
@@ -129,6 +137,8 @@ const App = () => {
     </div>
   );
 };
+
+// Here is my styling part ...uiiii
 
 const styles = {
   heading: {
